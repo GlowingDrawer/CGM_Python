@@ -1,0 +1,54 @@
+{
+  "ui": {
+    "ui_update_interval_ms": 50,
+    "max_table_rows": 2000
+  },
+  "filt": {
+    "filter_type": "滑动平均",
+    "window_size": 5,
+    "kalman_Q": 0.01,
+    "kalman_R": 0.1
+  },
+  "save": {
+    "auto_save": false,
+    "save_interval_ms": 1000,
+    "save_path": "./serial_data"
+  },
+  "proto": {
+    "time_keys": [
+      "t",
+      "time",
+      "sec",
+      "seconds",
+      "timestamp"
+    ],
+    "voltage_keys": [
+      "voltage",
+      "V",
+      "v"
+    ],
+    "uric_keys": [
+      "uric",
+      "uric_uA",
+      "UA",
+      "uA_uric"
+    ],
+    "ascorbic_keys": [
+      "ascorbic",
+      "ascorbic_uA",
+      "AA",
+      "uA_ascorbic"
+    ],
+    "glucose_keys": [
+      "glucose",
+      "glucose_mA",
+      "GLU",
+      "mA_glucose"
+    ],
+    "time_unit": "auto",
+    "voltage_scale": 1.0,
+    "uric_scale": 1.0,
+    "ascorbic_scale": 1.0,
+    "glucose_scale": 1.0
+  }
+}

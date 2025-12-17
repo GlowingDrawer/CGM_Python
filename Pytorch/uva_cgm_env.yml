@@ -1,0 +1,22 @@
+name: uva_cgm
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - jupyterlab
+  - notebook
+  - seaborn
+  - ipykernel
+  - pip:
+    - torch      # will be replaced by appropriate install if you prefer conda-installed torch
+    - torchvision
+    - torchaudio
+    - matplotlib_inline
